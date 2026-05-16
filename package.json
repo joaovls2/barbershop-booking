@@ -3,14 +3,15 @@
   "description": "Aplicação web para agedamentos de serviços para uma barbearia",
   "author": "João Victor Laurentino S",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve",
-    "server": "json-server --watch server.json --port 3333"
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "start": "node server.js"
   },
   "dependencies": {
     "css-loader": "^6.8.1",
     "dayjs": "^1.11.10",
-    "json-server": "^1.0.0-alpha.21",
+    "express": "^4.22.2",
+    "json-server": "^0.17.4",
     "style-loader": "^3.3.3",
     "webpack-dev-server": "^4.15.1"
   },
