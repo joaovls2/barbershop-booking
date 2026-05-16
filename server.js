@@ -7,9 +7,11 @@ const app = express()
 const PORT = process.env.PORT || 3333
 
 const router = jsonServer.router("server.json")
-const middlewares = jsonServer.defaults()
 
-app.use(middlewares)
+app.use(jsonServer.defaults({
+    static: "./dist"
+}))
+
 app.use(express.json())
 
 app.use("/api", router)
