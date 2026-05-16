@@ -1,4 +1,4 @@
-# 💈 HairDay - Barbershop Booking ✂️
+# 💈✂️ HairDay - Barbershop Booking 
 
 ## 📌 Sobre o projeto
 
